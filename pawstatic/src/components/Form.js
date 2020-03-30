@@ -4,10 +4,14 @@ export default class App extends Component {
     render() {
         return(
             <div>
-                <h1>Forms</h1>
-                <form>
-                    <p>pawstick</p>
-                </form>
+    <div className='pawstatic'>
+        <div className= 'radioButtons'>
+            <span>Human profile</span>
+            <span>Pet basics</span>
+            <span>Pet details</span>
+            <span>Confirm</span>
+        </div>
+    </div>
             </div>
         )
     }
