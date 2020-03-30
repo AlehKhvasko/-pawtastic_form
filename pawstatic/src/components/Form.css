@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     height: 100%;
-    
+    opacity: 0.7;
   }
   
   .App {
@@ -26,6 +26,7 @@ body{
     width: 80vw;
     border-radius: 4%;
     
+    
 }
 .radioButtons {
     display: flex;
@@ -33,34 +34,59 @@ body{
     justify-content: space-evenly;
     height: 80vh;
     width: 30vw;
-    background-color: rgba(68, 64, 64, 0.5);
+    background-color: rgb(17, 16, 16);
     border-radius: 4% 0 0 4%;
+    color: honeydew;
 }
 .radioButtons_icon{
     position: relative;
-    margin: 2vh auto;
+    margin: 4vh auto;
     text-align: center;
-    height: 10vh;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
 }
 .radioButtons_icon::before{
-    content: "paw";
+    content: "";
     position: absolute;
-    left:-5vw;
-    top: -2vh;
-    height: 30px;
-    width: 30px;
+    left:-60px;
+    top: -8px;
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
+    background-image: url(https://image.flaticon.com/icons/png/512/17/17479.png);
+    background-size: contain;
     background-color: pink;
 }
+.vertical{
+    border-left:1px solid rgb(61, 58, 58);
+    height: 70px;
+    margin: -20px 0 -20px 10px;
+}
+
 .radioButtons_btn {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     flex-flow: column nowrap;
-    height: 50vh;
+    height: 40vh;
+    padding-left:10vw ;
 }
-hr{
-    width:25%;
+.radioButtons_image {
+    margin-bottom: -15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 25vh;
+    background-image: url(https://img.pngio.com/labrador-vector-clipart-images-gallery-for-free-download-myreal-golden-retriever-head-png-798_837.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+hr {
+    margin-top: -3px;
+    width:100%;
 }
 
 .dog_form {
@@ -80,18 +106,40 @@ hr{
 p {
     text-align: left;
 }
+.image_load {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    margin:0 4vw ;
+    font-size: 1.1rem;
+}
+.image_load::before {
+    content: '';
+    background-image: url(https://lh3.googleusercontent.com/proxy/MbZPOHcWwfKUXZ7Q7qxSyIMfCXLqznGgjaKjfB7qW1gjQnxHtipNV1N7lUsJoGjtDyz3TdCjbPWxkgSxqDqHQQwTaocunafMtI_sRByeUOzquKZHoUU-z8gJyxfazz_HYXk2);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    left: -60px;
+    background-color: honeydew;
+    border-radius: 50%;
+}
 .dog_form__weight,.dog_form__bottom,.dog_form__center,.dog_form__top {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
-.dog_form__weight > div > p {
-    text-align: center;
-}
+
 input {
     height: 5vh;
-    width: 14vw;
+    width: 15vw;
     text-align: center;
+}
+.dog_form__weight > div > input {
+    width: 40vw;
 }
 .dog_form__footer {
     display: flex;
@@ -108,3 +156,34 @@ input {
     background-color: grey;
     font-size: 1.5rem;
 }
+
+.switch { 
+    position : relative ;
+    display : inline-block;
+    width : 20px;
+    height : 20px;
+    background-color: rgb(61, 58, 58);
+    border-radius: 20px;
+    margin-right: 1vw;
+  }
+  .switch::after {
+    display: none;
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: white;
+    top: -3px;
+    left: -5px;
+    transition: all 0.1s;
+  }
+  .checkbox:checked + .switch::after {
+    display: inline-block;
+  }
+  .checkbox:checked + .switch {
+    background-color: #33343a;
+  }
+  .checkbox { 
+    display : none;
+  }
