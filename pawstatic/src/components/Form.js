@@ -11,22 +11,21 @@ export default class App extends Component {
                 <div className='radioButtons_icon'>Pawstatic</div>
                 <div className='radioButtons_btn'>
                 <span>
-                    <input type="checkbox" id="toggle" class="checkbox" />
-                    <label for="toggle" class="switch">
+                    <input type="checkbox" id="toggle" className="checkbox" />
+                    <label for="toggle" className="switch">
                     </label>Human profile</span><div className="vertical"></div> 
-                    <span><input type="checkbox" id="toggle" class="checkbox" />
-                    <label for="toggle" class="switch">
+                    <span><input type="checkbox" id="toggle" className="checkbox" />
+                    <label for="toggle" className="switch1">
                     </label>Pet basics</span><div className="vertical"></div>  
-                    <span><input type="checkbox" id="toggle" class="checkbox" />
-                    <label for="toggle" class="switch">
+                    <span><input type="checkbox" id="toggle" className="checkbox" />
+                    <label for="toggle" className="switch2">
                     </label>Pet details</span><div className="vertical"></div> 
-                    <span><input type="checkbox" id="toggle" class="checkbox" />
-                    <label for="toggle" class="switch">
+                    <span><input type="checkbox" id="toggle" className="checkbox" />
+                    <label for="toggle" className="switch3">
                     </label>Confirm</span>
                 </div>
                 <div className='radioButtons_image'>
-                     <span>Save and Exit<hr/></span>
-                     
+                     <a href='#'>Save and Exit<hr/></a>
                 </div>
             </div>
             <div className='dog_form'>

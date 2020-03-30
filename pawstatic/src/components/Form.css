@@ -180,7 +180,7 @@ button:focus {
     background-color: rgba(255, 192, 203, 0.815);
 }
 
-.switch { 
+.switch,.switch1,.switch2,.switch3 { 
     position : relative ;
     display : inline-block;
     width : 20px;
@@ -189,7 +189,7 @@ button:focus {
     border-radius: 20px;
     margin-right: 1vw;
 }
-  .switch::after {
+  .switch::after, .switch1::after, .switch2::after, .switch3::after {
     display: none;
     content: '';
     position: absolute;
@@ -200,13 +200,10 @@ button:focus {
     top: -3px;
     left: -5px;
     transition: all 0.1s;
-  }
-  .checkbox:checked + .switch::after {
+}
+  .checkbox:checked + .switch::after  {
     display: inline-block;
-  }
-  .checkbox:checked + .switch {
-    background-color: #33343a;
-  }
+}
   .checkbox { 
     display : none;
-  }
+}
