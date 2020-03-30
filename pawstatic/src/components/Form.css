@@ -1,9 +1,3 @@
-.static {
-    height: 80vh;
-    width: 80vw;
-    border-radius: 1%;
-    background-color: rgb(201, 144, 171);
-}
 body{
     margin: 0;
     padding: 0;
@@ -17,7 +11,7 @@ body{
     justify-content: center;
     align-self: center;
   }
-  
+
   #root {
     display: flex;
     justify-content: center;
@@ -26,3 +20,91 @@ body{
     width: 100vw;
     background-color: grey;
   }
+.pawstatic {
+    display: flex;
+    height: 80vh;
+    width: 80vw;
+    border-radius: 4%;
+    
+}
+.radioButtons {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    height: 80vh;
+    width: 30vw;
+    background-color: rgba(68, 64, 64, 0.5);
+    border-radius: 4% 0 0 4%;
+}
+.radioButtons_icon{
+    position: relative;
+    margin: 2vh auto;
+    text-align: center;
+    height: 10vh;
+}
+.radioButtons_icon::before{
+    content: "paw";
+    position: absolute;
+    left:-5vw;
+    top: -2vh;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: pink;
+}
+.radioButtons_btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column nowrap;
+    height: 50vh;
+}
+hr{
+    width:25%;
+}
+
+.dog_form {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 80vh;
+    width: 50vw;
+    background-color: rgba(201, 144, 171, 0.557);
+    border-radius: 0 4% 4% 0;
+}
+.dog_form__main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    height: 55vh;
+}
+p {
+    text-align: left;
+}
+.dog_form__weight,.dog_form__bottom,.dog_form__center,.dog_form__top {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+.dog_form__weight > div > p {
+    text-align: center;
+}
+input {
+    height: 5vh;
+    width: 14vw;
+    text-align: center;
+}
+.dog_form__footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    height: 15vh;
+}
+.dog_form__footer > button {
+    height: 7vh;
+    width: 12vw;
+    border-radius: 30px;
+    position: relative;
+    background-color: grey;
+    font-size: 1.5rem;
+}

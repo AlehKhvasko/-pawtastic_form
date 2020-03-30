@@ -6,32 +6,43 @@ export default class App extends Component {
     render() {
         return(
     <div>
-        <div className='static'>
+        <div className='pawstatic'>
             <div className= 'radioButtons'>
-                <span>Human profile</span>
-                <span>Pet basics</span>  
-                <span>Pet details</span>
-                <span>Confirm</span>
-                <span>Save and Exit</span>
+                <div className='radioButtons_icon'>Pawstatic</div>
+                <div className='radioButtons_btn'>
+                    <span>Human profile</span>
+                    <span>Pet basics</span>  
+                    <span>Pet details</span>
+                    <span>Confirm</span>
+                </div>
+                <div className='radioButtons_image'>
+                     <span>Save and Exit<hr/></span>
+                     
+                </div>
             </div>
             <div className='dog_form'>
+                <div><h1>Yay,we love dogs! Give us <br/> the basics about your pup.</h1></div>
                 <div className="dog_form__main">
-                    <div><h1>Yay,we love dogs! Give us <br/> the basics about your pup.</h1></div>
-                    <div className="dog_form__left">
+                    <div className="dog_form__top">
                         <Input name="Name" type="text" value="Pet's name"></Input>
-                        <Input name="Breed" type="text" value="Pet's breed"></Input>
-                        <Input name="Gender" type="radio" value="Female Male"></Input>
-                    </div>
-                    <div className="dog_form__right">
                         <div className="image_load">
                             <div className="image_load"></div>
                             <p>Upload a photo</p>
                         </div>
+                    </div>
+                    <div className="dog_form__center">
                         <Input name="Breed" type="text" value="Pet's breed"></Input>
                         <Input name="Birthday" type="text" value="MM/DD/YYYY"></Input>
                     </div>
+                    <div className="dog_form__bottom">
+                        <Input name="Gender" type="radio" value="Female Male"></Input>
+                        <Input name="Breed" type="text" value="Pet's breed"></Input>
+                    </div>
+                    <div className="dog_form__weight">
+                        <Input name="Weight" type="radio" value="0-100lbs"></Input>
+                    </div>
                 </div>
-                <div className="dog_form__main">
+                <div className="dog_form__footer">
                     <button>Back</button>
                     <button>Next</button>
                 </div>  

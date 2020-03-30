@@ -4,8 +4,10 @@ import './App.css';
 
 
 //create component form
-//give backgroound color to root
+//give background color to root
 //create css files
+//divide html form into two sections
+//create radio buttons 
 
 function App() {
   return (
