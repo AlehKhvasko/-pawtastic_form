@@ -1,7 +1,7 @@
 .static {
     height: 80vh;
     width: 80vw;
-    border-radius: 3%;
+    border-radius: 1%;
     background-color: rgb(201, 144, 171);
 }
 body{
@@ -17,6 +17,7 @@ body{
     justify-content: center;
     align-self: center;
   }
+  
   #root {
     display: flex;
     justify-content: center;
