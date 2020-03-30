@@ -47,7 +47,12 @@ export default class App extends Component {
                         <Input name="Breed" type="text" value="Pet's breed"></Input>
                     </div>
                     <div className="dog_form__weight">
-                        <Input name="Weight" type="radio" value="0-25"></Input>
+                        <div className="dog_form__weight__field">
+                            <button className='lbs1' >0-25lbs</button>
+                            <button className='lbs2' >25-50lbs</button>
+                            <button className='lbs3' >50-100lbs</button>
+                            <button className='lbs4' >100+lbs</button>
+                        </div>
                     </div>
                 </div>
                 <div className="dog_form__footer">

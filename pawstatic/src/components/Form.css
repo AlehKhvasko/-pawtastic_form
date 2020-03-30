@@ -22,8 +22,8 @@ body{
   }
 .pawstatic {
     display: flex;
-    height: 80vh;
-    width: 80vw;
+    height: 90vh;
+    width: 90vw;
     border-radius: 4%;
     
     
@@ -137,24 +137,47 @@ input {
     height: 5vh;
     width: 15vw;
     text-align: center;
+    margin-bottom: 1vh;
 }
-.dog_form__weight > div > input {
+.dog_form__weight__field {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
     width: 40vw;
+    background-color: honeydew;
 }
 .dog_form__footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: white;
-    height: 15vh;
+    height: 10vh;
 }
 .dog_form__footer > button {
-    height: 7vh;
-    width: 12vw;
+    height: 5vh;
+    width: 10vw;
     border-radius: 30px;
     position: relative;
-    background-color: grey;
+    background-color: rgb(211, 201, 201);
     font-size: 1.5rem;
+}
+button:focus {
+    background-color: rgb(51, 48, 49);
+}
+
+.lbs1, .lbs2, .lbs3, .lbs4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8vw;
+    height: 3vh;
+    border: 1px solid white;
+    text-align: center;
+    font-size: 1rem;
+}
+.lbs1:focus, .lbs2:focus, .lbs3:focus, .lbs4:focus {
+    background-color: rgba(255, 192, 203, 0.815);
 }
 
 .switch { 
@@ -165,7 +188,7 @@ input {
     background-color: rgb(61, 58, 58);
     border-radius: 20px;
     margin-right: 1vw;
-  }
+}
   .switch::after {
     display: none;
     content: '';
